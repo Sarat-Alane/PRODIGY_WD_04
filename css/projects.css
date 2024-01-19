@@ -1,0 +1,106 @@
+body {
+    background-image: url(../images/homebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.navbar {
+  width: 150%;
+  height: 55px;
+  background: linear-gradient(to right, #0490E7, transparent);
+  margin-top: 20px;
+  padding-left: 250px;
+}
+
+button {
+  width:175px;
+  height: 55px;
+  margin-right: -5px;
+  border-top: none;
+  border-bottom:none;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  background: transparent;
+  color: white;
+  transform: skew(-20deg);
+  transition: color 500ms, background-color 500ms;
+}
+
+#project {
+  background-color: white;
+  color: #0490E7;
+}
+
+.btntxt {
+  display: inline-block;
+  transform: skew(20deg);
+  font-family: 'Genos', sans-serif;
+  font-size: 2.75vh;
+  font-weight: 900;
+}
+
+button:hover {
+  background-color: white;
+  color: #0490E7;
+}
+
+.proj-body {
+  margin-top: 50px;
+}
+
+.top-box {
+  display: flex;
+}
+
+.proj1-box {
+  width: 33.4%;
+}
+
+.proj2-box {
+  width: 33.4%;
+}
+
+.proj3-box {
+  width: 33.4%;
+}
+
+.top-proj {
+  width: 80%;
+  background-color: aliceblue;
+  margin: auto;
+}
+
+.desc {
+  font-family: 'Genos', sans-serif;
+  font-size: 2.75vh;
+  margin-left: 5%;
+  color: #001F3F;
+}
+
+h2 {
+  padding: 5px 5px;
+  font-family: 'Genos', sans-serif;
+  margin-left: 10%;
+  color: #001F3F;
+  font-weight: 1000;
+}
+
+li {
+  font-weight: 600;
+}
+
+#proj1, #proj2, #proj3, #proj4, #proj5 {
+  background: repeating-linear-gradient(to bottom right, #0490E7, #00b3ff, #04c5e7, #afafaf);
+  height: 375px;
+}
+
+.bottom-box {
+  display: flex;
+  margin-top: 5%;
+}
+
+.proj4-box, .proj5-box {
+  width: 27.5%;
+  margin: auto;
+}
