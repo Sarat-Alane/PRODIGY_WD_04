@@ -1,0 +1,239 @@
+body {
+    background-image: url(../images/homebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+  height: 55px;
+  background: linear-gradient(to right, #0490E7, transparent);
+  margin-top: 20px;
+  padding-left: 250px;
+}
+
+.nav-button {
+  width:175px;
+  height: 55px;
+  margin-right: -5px;
+  border-top: none;
+  border-bottom:none;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  background: transparent;
+  color: white;
+  transform: skew(-20deg);
+  transition: color 500ms, background-color 500ms;
+}
+
+#home {
+  background-color: white;
+  color: #0490E7;
+}
+
+.btntxt {
+  display: inline-block;
+  transform: skew(20deg);
+  font-family: 'Genos', sans-serif;
+  font-size: 2.75vh;
+  font-weight: 900;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: #0490E7;
+}
+
+.headline {
+    background: linear-gradient(to right, #0490E7, transparent);
+    color: aliceblue;
+    width: 75%;
+}
+
+h1{
+    width: fit-content;
+    margin: auto;
+    margin-top: 2%;
+    padding: 10px 10px;
+    margin-bottom: 45px;
+    font-family: 'Handjet', sans-serif;
+    font-size: 5vh;
+}
+
+.homebody {
+  display: flex;
+  margin-top: 20px;
+}
+
+.homeparabox {
+  width: 75%;
+  margin-left: 0;
+}
+
+.photo {
+  width: 300px;
+  height: 400px;
+  border: 8px double #0490E7;
+  background-color: white;
+}
+
+.homepara {
+  background: repeating-linear-gradient(to bottom right, #0490E7, #00b3ff,#04c5e7, #afafaf);
+  width: 80%;
+  font-size: 4vh;
+  padding: 20px 20px;
+  font-family: 'Genos', sans-serif;
+  font-weight: 700;
+  color: #001F3F;
+}
+
+p {
+  border: 2px solid #001F3F;
+  border-left: none;
+  border-right: none;
+}
+
+.linkbox {
+  display: flex;
+}
+
+.exp-mypr {
+  width: 50%;
+}
+
+.image-container img {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.photo img[alt] {
+  padding: 10px;
+  background-color: #ffffff;
+  color: #333;
+  font-style: italic;
+  margin-top: 180px;
+  margin-left: 30px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+
+@media (max-width: 450px) {
+
+  body {
+    background-image: url(../images/mobile-bg.jpg);
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .headline {
+    display: none;
+  }
+
+  .mobile-headline {
+    background: linear-gradient(to right, #0490E7, transparent);
+    color: aliceblue;
+    font-family: 'Handjet', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .mobile-headline > p {
+    margin: none;
+  }
+
+  .homebody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homeparabox {
+    width: 92vw;
+  }
+
+  .homepara {
+    width: 100%;
+    box-sizing: border-box;
+    background: repeating-linear-gradient(to bottom right, #0490e7d0, #00b3ffd0,#04c5e7d0, #afafafd0);
+    font-size: 1.25rem;
+  }
+
+  .linkbox a {
+    font-size: 1rem;
+  }
+
+  .photo {
+    margin: 32px auto 120px;
+  }
+
+  .mobile-nav {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* background: repeating-linear-gradient(to bottom right, #0490E7, #00b3ff,#04c5e7); */
+    background: linear-gradient(to top, #fff 10%, #00b3ff, #0490E7);
+    padding-top: 8px;
+  }
+
+  .mobile-nav-container {
+    display: flex;
+  }
+
+  .mobile-nav-container > a {
+    width: 20%;
+    text-decoration: none;
+  }
+
+  .mobile-nav-button {
+    background: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+
+  .empty-mob-nav {
+    width: 4%;
+    border-radius: 20px;
+  }
+
+  .mobile-nav-button img {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    margin-top: 8px;
+  }
+
+  .selected-button {
+    background: linear-gradient(to top, #fff 80%, #cef0ff);
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .selected-nav-page {
+    font-size: 0.6rem;
+    margin: 2px 0px;
+    
+  }
+
+  .nav-page {
+    display: none;
+  }
+
+  .mobile-nav-bottom {
+    /* background: repeating-linear-gradient(to bottom right, #0490E7, #00b3ff,#04c5e7); */
+    background-color: white;
+    height: 4px;
+  }
+
+  .not-selected-button {
+    opacity: 0.6;
+  }
+}
