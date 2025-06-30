@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Skills</title>
-    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="./css/skills.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,17 +20,21 @@
     <div class="navbar">
         <div class="button-wrapper">
             <div class="navbtn">
-                <a href="index.html"><button id="home"><span class="btntxt">Home</span></button></a>
-                <a href="aboutme.html"><button id="aboutme"><span class="btntxt">About Me</span></button></a>
-                <a href="projects.html"><button id="project"><span class="btntxt">My Projects</span></button></a>
-                <a href="skills.html"><button id="skills"><span class="btntxt">My Skills</span></button></a>
+                <a href="./index.html"><button class="nav-button" id="home"><span class="btntxt">Home</span></button></a>
+                <a href="./aboutme.html"><button class="nav-button" id="aboutme"><span class="btntxt">About Me</span></button></a>
+                <a href="./projects.html"><button class="nav-button" id="project"><span class="btntxt">My Projects</span></button></a>
+                <a href="./skills.html"><button class="nav-button" id="skills"><span class="btntxt">My Skills</span></button></a>
             </div>
         </div>
     </div>
 
+    <div class="mobile-headline">
+        My Skills
+    </div>
+
     <div class="skill-body">
         <h2 class="heading">
-            <u>Web Development and Programming</u>
+            <u>Web Development and Programming:</u>
         </h2>
         <p class="skill-para">
             I possess a strong foundation in web development, specializing in frontend languages such as JavaScript,
@@ -38,9 +42,12 @@
             seamless experience for visitors. Additionally, I am well-versed in frameworks like React.js and Bootstrap,
             enabling me to build dynamic and interactive web applications. With knowledge in Node.js, I contribute to
             the backend development process, ensuring a holistic understanding of the web development lifecycle.
-        </p><hr>
+        </p>
+        
+        <div class="separator"></div>
+
         <h2 class="heading">
-            <u>Software Proficiency and Soft Skills</u>
+            <u>Software Proficiency and Soft Skills:</u>
         </h2>
         <p class="skill-para">
             In addition to my technical skills, I am adept at efficiently using tools like Visual Studio Code for coding
@@ -51,6 +58,23 @@
             well but also offer an aesthetically pleasing experience. My skills extend to everyday software applications
             like Microsoft Word and PowerPoint, enhancing my ability to convey ideas and information effectively.
         </p>
+    </div>
+
+        <div class="mobile-nav">
+        <div class="mobile-nav-container">
+            <div class="empty-mob-nav"></div>
+            <a href="./index.html"><button class="mobile-nav-button not-selected-button"><img src="./images/home.png" alt=""><span class="nav-page">Home</span></button></a>
+            <div class="empty-mob-nav"></div>
+            <a href="./aboutme.html"><button class="mobile-nav-button not-selected-button"><img src="./images/user.png" alt=""><span class="nav-page">About Me</span></button></a>
+            <div class="empty-mob-nav"></div>
+            <a href="./projects.html"><button class="mobile-nav-button not-selected-button"><img src="./images/project.png" alt=""><span class="nav-page">My Projects</span></button></a>
+            <div class="empty-mob-nav"></div>
+            <a href="./skills.html"><button class="mobile-nav-button selected-button"><img src="./images/skill.png" alt=""><span class="selected-nav-page">My Skills</span></button></a>
+            <div class="empty-mob-nav"></div>
+        </div>
+        <div class="mobile-nav-bottom">
+
+        </div>
     </div>
 
 </body>
