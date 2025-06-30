@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
-    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="./css/projects.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,12 +20,16 @@
     <div class="navbar">
         <div class="button-wrapper">
             <div class="navbtn">
-                <a href="index.html"><button id="home"><span class="btntxt">Home</span></button></a>
-                <a href="aboutme.html"><button id="aboutme"><span class="btntxt">About Me</span></button></a>
-                <a href="projects.html"><button id="project"><span class="btntxt">My Projects</span></button></a>
-                <a href="skills.html"><button id="skills"><span class="btntxt">My Skills</span></button></a>
+                <a href="./index.html"><button class="nav-button" id="home"><span class="btntxt">Home</span></button></a>
+                <a href="./aboutme.html"><button class="nav-button" id="aboutme"><span class="btntxt">About Me</span></button></a>
+                <a href="./projects.html"><button class="nav-button" id="project"><span class="btntxt">My Projects</span></button></a>
+                <a href="./skills.html"><button class="nav-button" id="skills"><span class="btntxt">My Skills</span></button></a>
             </div>
         </div>
+    </div>
+
+    <div class="mobile-headline">
+        My Projects
     </div>
 
     <div class="proj-body">
@@ -128,6 +132,23 @@
 
         </div>
 
+    </div>
+
+    <div class="mobile-nav">
+        <div class="mobile-nav-container">
+            <div class="empty-mob-nav"></div>
+            <a href="./index.html"><button class="mobile-nav-button not-selected-button"><img src="./images/home.png" alt=""><span class="nav-page">Home</span></button></a>
+            <div class="empty-mob-nav"></div>
+            <a href="./aboutme.html"><button class="mobile-nav-button not-selected-button"><img src="./images/user.png" alt=""><span class="nav-page">About Me</span></button></a>
+            <div class="empty-mob-nav"></div>
+            <a href="./projects.html"><button class="mobile-nav-button selected-button"><img src="./images/project.png" alt=""><span class="selected-nav-page">My Projects</span></button></a>
+            <div class="empty-mob-nav"></div>
+            <a href="./skills.html"><button class="mobile-nav-button not-selected-button"><img src="./images/skill.png" alt=""><span class="nav-page">My Skills</span></button></a>
+            <div class="empty-mob-nav"></div>
+        </div>
+        <div class="mobile-nav-bottom">
+
+        </div>
     </div>
 
 </body>
